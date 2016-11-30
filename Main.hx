@@ -71,6 +71,12 @@ SAVEAS TYPE=EXTRACT FOLDER=* FILE=ph_spell_checker_bot.csv
 WAIT SECONDS=6
 ";
 		}
+
+		macroString += "
+TAB CLOSEALLOTHERS
+TAB T=1
+TAB CLOSE
+";
 		sys.io.File.saveContent("C:\\Users\\ARebel\\Dropbox\\imacros\\macros\\ph_spell_checker_bot.iim", macroString);
 	}
 }
